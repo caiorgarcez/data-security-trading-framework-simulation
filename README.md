@@ -18,8 +18,8 @@ In each folder, build the docker images to later import to GNS3.
 /usr
 
 
-TTP: 
-# DHCP config for eth0
+### TTP: 
+#### DHCP config for eth0
 auto eth0
 iface eth0 inet dhcp
 # Static config for eth1
@@ -30,19 +30,14 @@ iface eth1 inet static
 	gateway 192.168.1.1
 
 
-Node1:
+### Nodes:
 
-# Static config for eth0
+#### Static config for eth0
 auto eth0
 iface eth0 inet static
-	address 192.168.1.3
+	address 192.168.1.X
 	netmask 255.255.255.0
 	gateway 192.168.1.1
-#	up echo nameserver 192.168.1.1 > /etc/resolv.conf
-
-# DHCP config for eth1
-auto eth1
-iface eth1 inet dhcp
-
-
-Node 2:
+<!-- 	up echo nameserver 192.168.1.X > /etc/resolv.conf
+ -->
+ 
