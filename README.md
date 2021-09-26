@@ -1,7 +1,5 @@
 ## Data Security Energy Trading Simulation
 
----------
-
 ### Persist docker images in GNS3
 
 Following directories must be provided to the docker image configuration.
