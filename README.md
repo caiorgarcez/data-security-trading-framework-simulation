@@ -1,8 +1,11 @@
 # dset-simulation
 Data Security Energy Trading Simulation
 
-### build images
-In each folder, build the docker images to later import to GNS3.
+---------
+
+### Persist docker images in GNS3
+
+Following directories must be provided to the docker image configuration.
 
 /bin
 /boot
@@ -17,8 +20,10 @@ In each folder, build the docker images to later import to GNS3.
 /var
 /usr
 
+---------
 
-### TTP: 
+### TTP
+
 #### DHCP config for eth0
 auto eth0
 iface eth0 inet dhcp
@@ -29,8 +34,9 @@ iface eth1 inet static
 	netmask 255.255.255.0
 	gateway 192.168.1.1
 
+---------
 
-### Nodes:
+### Nodes
 
 #### Static config for eth0
 auto eth0
