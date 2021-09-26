@@ -22,7 +22,7 @@ In each folder, build the docker images to later import to GNS3.
 #### DHCP config for eth0
 auto eth0
 iface eth0 inet dhcp
-# Static config for eth1
+#### Static config for eth1
 auto eth1
 iface eth1 inet static
 	address 192.168.1.2
